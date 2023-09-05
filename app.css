@@ -75,3 +75,27 @@ header{
     cursor: pointer;
 }
 
+section{
+    padding: 0 15%;
+}
+
+.home{
+    position: realative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: spance-between;
+    gap: 30px;
+}
+
+.home-img{
+    width: 1500px;
+    height: 750px;
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
