@@ -100,6 +100,23 @@ section{
     object-fit: contain;
 }
 
-.btn{
-    display:
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px); /* The image width */
+    }
+  }
+
+.scrolling-image-container{
+    overflow: hidden;
 }
+
+.scrolling-image{
+    background: "LoopingBackgroundImage.png" repeat-x;
+    height: 750px;
+    width:7680px;
+    animation: slide 3s linear infinite;
+}
+
