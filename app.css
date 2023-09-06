@@ -32,16 +32,18 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 15%;
+    padding: 32px 10%;
     background: transparent;
     transition: all ease 0.45s;
 }
 
+/*Logo Section*/
 .logo{
     color: var(--text-color);
     font-size: 41px;
     font-weight: 600;
 }
+
 
 .logo span{
     color: var(--main-color);
@@ -85,8 +87,23 @@ section{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: spance-between;
+    justify-content: space-between;
     gap: 30px;
+}
+
+.home-text h1{
+    font-size: 100px;
+    margin: 15px, 0px;
+
+}
+
+.home-text span{
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.home-text p{
+    font-size: 18px;
 }
 
 /*Image Container*/
@@ -126,8 +143,7 @@ section{
     animation: rotateImg 60s linear infinite;
 }
 
-
-/*Resume and LinkedIn Profile*/
+/*Resume and LinkedIn Profile */
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -137,3 +153,16 @@ section{
     border: 4px solid var(--text-color);
     font-size: 20px;
 }
+
+.btn:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.main-btn{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
