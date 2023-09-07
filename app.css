@@ -42,7 +42,9 @@ header{
     color: var(--text-color);
     font-size: 41px;
     font-weight: 600;
+    white-space: nowrap;
 }
+
 
 .logo span1,span2,span3,span4{
     font-size: 41px;
@@ -180,5 +182,59 @@ section{
     padding-bottom: 10px;
 }
 
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 8%; 
+        transition: .2s;
+    }
+}
 
+@media (max-width: 1370px){
+    header{
+        padding: 15px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 4%; 
+        transition: .2s;
+    }
+    :root{
+        --big-font: 5.5rem;
+        --p-font: 1 rem;
+        transition: .2s;
+    }
+} 
 
+@media (max-width: 1020px){
+    .navbar a{
+        margin: 0 15ps
+    }
+    :root{
+        --big-font: 5rem;
+        --p-font: 1 rem;
+        transition: .2s;
+    }
+} 
+
+@media (max-width: 950px){
+    section{
+        padding: 70px 4%;
+    }
+    header{
+        padding: 11px 4%; 
+    }
+    .home{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-text{
+        order: 2
+    }
+      
+    
+} 
