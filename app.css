@@ -25,6 +25,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+    margin: 0;
 }
 
 
@@ -36,18 +37,23 @@ header{
     width: 100%;
     z-index: 1000;
     background: black;
+    background-image: url("MenuBackground.png");
     transition: all ease 0.45s;
+    padding: 0;
 }
 
 
 /*Header Container Content*/
 .headerContainer{
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
     align-items: center;
     padding-top: 10px;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 0;   /* Remove left padding */
+    padding-right: 0;
 }
 
 
@@ -84,7 +90,7 @@ header{
 
 /*Navigation Bar Section*/
 .navbar{
-    display: flex;
+    display: inline-flex;
 }
 
 .navbar a{
