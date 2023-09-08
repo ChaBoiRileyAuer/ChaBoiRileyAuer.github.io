@@ -29,12 +29,16 @@ header{
     right: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 10%;
-    background: transparent;
+    background: black;
     transition: all ease 0.45s;
+}
+
+.headerContainer{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*Logo Section*/
@@ -87,13 +91,6 @@ header{
     color: var(--main-color);
 }
 
-.menu-btn{
-    border: 1px solid #3b3b3b;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
 
 section{
     padding: 0 15%;
@@ -160,6 +157,8 @@ section{
 .bottom-img{
     animation: rotateImg 60s linear infinite;
 }
+
+
 
 /*Resume and LinkedIn Profile */
 .btn{
