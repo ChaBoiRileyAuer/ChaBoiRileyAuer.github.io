@@ -1,3 +1,4 @@
+/*Global*/
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +8,8 @@
     text-decoration: none;
 }
 
+
+/*Global Variables*/
 :root{
     --bg-color: #000000;
     --text-color: #fff;
@@ -17,12 +20,15 @@
 }
 
 
+/*Body Content*/
 body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
 }
 
+
+/*Header Content*/
 header{
     position:fixed;
     top: 0;
@@ -33,13 +39,17 @@ header{
     transition: all ease 0.45s;
 }
 
+
+/*Header Container Content*/
 .headerContainer{
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-top: 10px;
 }
+
 
 /*Logo Section*/
 .logo{
@@ -49,7 +59,7 @@ header{
     white-space: nowrap;
 }
 
-
+/*Logo Cool Color Change*/
 .logo span1,span2,span3,span4{
     font-size: 41px;
     font-weight: 600;
@@ -71,12 +81,14 @@ header{
     color: rgb(255, 56, 56);
 }
 
+
+/*Navigation Bar Section*/
 .navbar{
     display: flex;
 }
 
 .navbar a{
-    font-size: var(--p-font);
+    font-size: 24px;
     font-weight: 500;
     color: var(--text-color);
     margin: 0 25px;
@@ -92,8 +104,9 @@ header{
 }
 
 
+/*Home Section*/
 section{
-    padding: 0 15%;
+    padding: 0px 15%;
 }
 
 .home{
@@ -104,12 +117,12 @@ section{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    padding-top: 30px;
 }
 
 .home-text h1{
     font-size: 100px;
     margin: 15px, 0px;
-
 }
 
 .home-text span{
